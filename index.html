@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+  </head>
+  <body>
+    <h1><u>Registration Form:</u></h1>
+    <form>
+      <label for="first name">First Name:</label>
+      <input
+        type="text"
+        placeholder="First Name"
+        minlength="3"
+        maxlength="50"
+        required
+      />
+      <br />
+      <br />
+      <label for="Last name">Last Name:</label>
+      <input 
+      type="text" 
+      placeholder="Last Name" 
+      minlength="3" 
+      maxlength="50" />
+      <br />
+      <br>
+      <label for="password">password:</label>
+      <input type="password" placeholder="password" minlength="8" maxlength="100" required >
+      <br> <br>
+<label for="Bio">Bio:</label>
+<textarea 
+name="text"
+cols="25"
+rows="8"
+minlength="20" 
+maxlength="500">
+</textarea>
+<br>
+<fieldset>
+<legend>Gender:</legend>
+<input type="radio" name="Gender" value="Male" id="Male" checked>
+<label for="Male">Male</label>
+<br>
+<input type="radio" name="Gender" value="female" id="female">
+<label for="female">Female</label>
+
+<br>
+<input type="radio" name="Gender" value="others" id="others"> 
+<label for="others">Others</label>
+<br>
+</fieldset>
+<br>
+<fieldset>
+<legend>Interests:</legend>
+<input type="checkbox" name="Interests" value="Music" id="Music">
+<label for="Music">Music</label>
+
+<br>
+<input type="checkbox" name="Interests" value="Reading" id="Reading">
+<label for="Reading">Reading</label>
+<br>
+<input type="checkbox" name="Interests" value="Sports" id="Sports" checked>
+<label for="Sports">Sports</label>
+</fieldset>
+
+<br>
+
+<label for="country" >Country:</label>
+<select name="country" >Country:
+<option value="U-A-E" >U-A-E</option>
+<option value="Pakistan" >Pakistan</option>
+<option value="Palestine" >Palestine</option>
+<option value="Turkey" >Turkey</option>
+<option value="Yemen" >Yemen</option>
+<option value="Qatar" >Qatar</option>
+<option value="Malaysia" >Malaysia</option>
+<option value="Oman" >Oman</option>
+<option value="Afghanistan" >Afghanistan</option>
+ </select>
+ <br>
+ <br>
+ <label>prefered colors:</label>
+ <select multiple>
+<option value="Red">Red</option>
+<option value="Green">Green</option>
+<option value="White">White</option>
+<option value="Yellow">Yellow</option>
+<option value="Gray">Gray</option>
+ >
+ </select>
+ <br>
+ <br>
+<label >Profile Picture:</label>
+<input type="file" name="Choose file" accept="image/*" >
+<br>
+<br>
+<label>Birth Date:</label>
+<input type="date" name="Birht Date">
+<br>
+<br>
+<label>Email:</label>
+<input type="email" name="email" placeholder="Enter_your_email" required>
+<br>
+<br>
+<label>Website:</label>
+<input type="url" name="Website" placeholder="https://example.com">
+<br>
+<br>
+<label>Search:</label>
+<input type="search" name="search" placeholder="Search_here">
+<br>
+<br>
+<button type="submit">Submit</button>
+</form>
+</body>
+</html>
